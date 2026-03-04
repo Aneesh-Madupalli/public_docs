@@ -189,6 +189,21 @@ If additional third‑party SDKs or backend services are added in future version
 
 ---
 
+### Advertising and Monetization
+
+For the current version of Cachely:
+
+- The App shows **no in‑app advertisements**.
+- The App does **not** use advertising SDKs, ad networks, mediation platforms, or user profiling for ads.
+- The App does **not** sell or share data with third parties for advertising or marketing purposes.
+
+If a future version of Cachely introduces ads or other monetization features that rely on data processing, this Privacy Policy and the Google Play Data Safety section will be updated in advance to:
+
+- Clearly describe what data is used for advertising or monetization; and
+- Provide appropriate choices or controls where required by applicable law.
+
+---
+
 ### Data Sharing and Disclosure
 
 Based on the current implementation, Cachely:
