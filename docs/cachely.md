@@ -1,8 +1,9 @@
 ## Cachely – Privacy Policy
 
-**App Name:** Cachely  
-**Developer/Company Name:** **[Developer must confirm legal entity name]**  
-**Effective Date:** **[Developer must confirm effective date]**
+**App Name:** Cachely - Cache Cleaner  
+**Package Name (Application ID):** com.cachely.app  
+**Developer/Company Name:** Aneesh  
+**Effective Date:** March 4, 2026
 
 ---
 
@@ -11,9 +12,19 @@
 This Privacy Policy explains how Cachely ("**the App**", "**we**", "**us**" or "**our**") handles information when you install and use the App on your Android device.  
 Cachely is a minimal, one‑tap cache cleaner focused on performing a single, clear task: helping you clear app cache on your device. The App has **no ads** and **no tracking SDKs**.
 
-Cachely operates locally on your device. Based on the current implementation, the App does **not** collect, transmit, sell, or share your personal data with third parties. Any technical information that is processed is used only to provide the core cache‑cleaning functionality and remains on your device.
+Cachely operates locally on your device. Based on the current implementation, the App does **not** collect, transmit, sell, or share your personal data with third parties. Any technical information processed by the App is used solely to provide the core cache‑cleaning functionality and remains on your device.
 
 By using the App, you agree to the handling of information as described in this Privacy Policy. If you do not agree, you should not use the App.
+
+---
+
+### Data Controller
+
+For the purposes of applicable data protection laws (including the EU General Data Protection Regulation), the **data controller** responsible for the processing of personal data in connection with the App is:
+
+- **Name:** Aneesh  
+- **Country:** India  
+- **Contact email:** thealectronai@gmail.com
 
 ---
 
@@ -45,7 +56,7 @@ This information is:
   - Number of apps cleaned and skipped.
 - **Not transmitted** to any server or third‑party service according to the current code.
 
-The App does **not** request the Android `INTERNET` permission, which technically prevents the App from sending data over the network.
+Because the App does **not** declare the Android `INTERNET` permission, it technically cannot transmit data over the network.
 
 #### 2. Accessibility Information (On‑Device Only, Optional)
 
@@ -66,11 +77,13 @@ Important safeguards in the current implementation:
 - The service is focused on **Settings screens only** and is used to:
   - Navigate to the Storage screen.
   - Tap the "Clear cache" button.
-  - Report the bytes cleared back to the App for that session.
+  - Report the estimated number of bytes cleared back to the App for that session.
 - The App does **not**:
   - Save the full contents of any screen.
   - Transmit Accessibility content off the device.
   - Use Accessibility for background monitoring or unrelated purposes.
+
+The Accessibility Service is used exclusively to automate the cache‑clearing interaction inside Android system settings and is not used for data collection or monitoring general user activity.
 
 Accessibility permissions can be disabled at any time via your device’s system settings. If disabled, assisted cleaning is turned off and Cachely will fall back to a manual flow where you are guided to clear cache yourself.
 
@@ -92,20 +105,18 @@ The App does not use Usage Access data for analytics, profiling, or tracking.
 
 #### 4. Local Settings and UI State
 
-The App manages certain local settings such as appearance (dark/light mode) and user interface state. Based on the reviewed code:
+The App manages certain local settings such as appearance (dark/light mode) and user interface state. Based on the current implementation:
 
 - These settings are used to control the App’s look and behavior on your device.
 - They are not linked to personal identifiers such as your name, email, or address.
 - They are not transmitted to remote servers.
-
-**Developer must confirm:**  
-If additional local storage mechanisms (for example, AndroidX DataStore) are used to store non‑sensitive preferences (such as theme mode), these should remain fully on‑device and should not be used to store personal data or identifiers.
+- Any local storage used is limited to non‑sensitive preferences and remains fully on‑device.
 
 #### 5. Contacting Support
 
 From the "Support & Legal" section in the App, you can choose to contact support via email. When you tap this option:
 
-- The App opens your chosen email client with a pre‑filled **support email address** (currently `support@example.com` in the code).
+- The App opens your chosen email client with a pre‑filled **support email address** (`thealectronai@gmail.com`).
 - You may include information such as:
   - Your email address.
   - Device model and Android version (if you choose to share this).
@@ -119,19 +130,13 @@ The App itself:
 Any information you choose to send to support is handled by:
 
 - Your email provider; and
-- The developer’s support processes.
-
-**Developer must confirm:**
-
-- The final support email address.
-- How support emails are stored, who can access them, and for how long they are retained.
+- The developer’s support processes. Support emails may be retained for up to 12 months for troubleshooting, record‑keeping, and legal compliance, and only the developer has access to these emails.
 
 #### 6. External Links and Store Interactions
 
 The App can open external links on your device, including:
 
-- A **Privacy Policy** URL (currently a placeholder in the source code).
-- A **Terms & Conditions** URL (currently a placeholder in the source code).
+- A **Privacy Policy** URL currently hosted at `https://github.com/Aneesh-Madupalli/public_docs/blob/main/docs/cachely.md`.
 - The App’s listing on the **Google Play Store**.
 - A share sheet link where you can share the Play Store URL with others.
 
@@ -140,10 +145,7 @@ When you tap these options:
 - The App instructs your device to open a web browser, the Play Store app, or a share/intents chooser.
 - Any data collected during your use of these external services is governed by the privacy policies and terms of those services (for example, Google Play, your web browser, your messaging apps), **not by this App**.
 
-**Developer must confirm:**
-
-- The final production URLs for the Privacy Policy and Terms pages.
-- Whether the external website(s) implement any analytics, cookies, or other tracking technologies (this document covers the App itself, not any external website).
+The page hosting this Privacy Policy does not use analytics, cookies, or other tracking technologies.
 
 ---
 
@@ -174,17 +176,16 @@ According to the current project configuration:
 - The App does **not** integrate analytics SDKs such as Firebase Analytics, Google Analytics, or similar services.
 - The App does **not** integrate advertising SDKs such as AdMob or Facebook Audience Network.
 - The App does **not** integrate crash‑reporting SDKs such as Firebase Crashlytics.
-- The App does **not** declare the `INTERNET` permission, which prevents network access from the App itself.
+- The App does **not** declare the `INTERNET` permission, which prevents network access from the App itself and technically stops the App from sending data over the network.
 
 The only third‑party interactions are:
 
 - Your **email provider**, when you choose to send a support email.
-- Your **web browser** or **Google Play Store app**, when you open links for the Privacy Policy, Terms & Conditions, rating the App, or sharing the App.
+- Your **web browser** or **Google Play Store app**, when you open links for the Privacy Policy, rating the App, or sharing the App.
 
 These third parties operate under their own terms and privacy policies.
 
-**Developer must confirm:**  
-That no additional third‑party SDKs or backend services are added prior to release that would send device or usage data off the device. If such services are introduced, this Privacy Policy must be updated to describe them accurately.
+If additional third‑party SDKs or backend services are added in future versions that would send device or usage data off the device, this Privacy Policy and the Google Play Data Safety section will be updated to describe them accurately.
 
 ---
 
@@ -224,9 +225,7 @@ For support communications:
   - Respond to your request.
   - Maintain records of support interactions.
   - Comply with legal obligations or resolve disputes.
-
-**Developer must confirm:**  
-Specific retention periods and practices for support emails (for example, whether they are periodically deleted and who within the organization has access to them).
+- As a general rule, support emails may be retained for up to 12 months, and only the developer has access to these emails.
 
 ---
 
@@ -289,6 +288,8 @@ Residents of California may also have the right to:
 
 At this time, based on the current implementation, Cachely does **not** sell personal information.
 
+This Privacy Policy is consistent with the information disclosed in the Google Play "Data Safety" section for Cachely.
+
 ---
 
 ### Changes to This Privacy Policy
@@ -306,8 +307,7 @@ Your continued use of the App after any changes to this Privacy Policy becomes e
 
 If you have any questions, concerns, or requests regarding this Privacy Policy or the App’s privacy practices, you can contact us at:
 
-- **Email:** **[Developer must confirm contact email / support address]**  
-- **Postal address (if applicable):** **[Developer must confirm physical mailing address, if required by local law]**
+- **Email:** thealectronai@gmail.com
 
 Please include sufficient information for us to understand your request. If you are making a privacy‑rights request, please indicate the country or state in which you reside so we can assess which laws may apply.
 
