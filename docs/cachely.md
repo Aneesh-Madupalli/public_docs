@@ -22,8 +22,8 @@ By using the App, you agree to the handling of information as described in this 
 
 For the purposes of applicable data protection laws (including the EU General Data Protection Regulation), the **data controller** responsible for the processing of personal data in connection with the App is:
 
-- **Name:** Aneesh  
-- **Country:** India  
+- **Name:** Aneesh
+- **Country:** India
 - **Contact email:** thealectronai@gmail.com
 
 ---
@@ -325,4 +325,3 @@ If you have any questions, concerns, or requests regarding this Privacy Policy o
 - **Email:** thealectronai@gmail.com
 
 Please include sufficient information for us to understand your request. If you are making a privacy‑rights request, please indicate the country or state in which you reside so we can assess which laws may apply.
-
